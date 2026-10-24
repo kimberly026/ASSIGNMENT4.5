@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | College Tech Club</title>
+    <meta name="description" content="Register your interest in joining the College Tech Club and participating in student technology activities.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Club Registration</h1>
+        <p>Become a part of our community</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html" aria-current="page">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Student Membership Form</h2>
+        <p>Complete the form below to register your interest.</p>
+
+        <form action="#" method="post">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName"
+                   autocomplete="name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+                   autocomplete="tel" required>
+
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId">
+
+            <label for="course">Course / Department *</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select your course --</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <fieldset style="border: 1px solid #b8c4d1; padding: 12px; margin-top: 18px;">
+                <legend>Areas of Interest</legend>
+
+                <label>
+                    <input type="checkbox" name="interests" value="Web Development">
+                    Web Development
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interests" value="Programming">
+                    Programming
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interests" value="Robotics">
+                    Robotics
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interests" value="Electronics">
+                    Electronics
+                </label>
+            </fieldset>
+
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" name="reason" rows="5"
+                      placeholder="Tell us about your interests..."></textarea>
+
+            <label>
+                <input type="checkbox" name="consent" value="yes" required>
+                I confirm that the information provided is correct.
+            </label>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+
+        <p><small>* Required fields</small></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 College Tech Club</p>
+    </footer>
+</body>
+</html>
